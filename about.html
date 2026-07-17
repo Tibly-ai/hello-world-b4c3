@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Hello World — Simple, Honest Websites</title>
+<meta name="description" content="Meet the people behind Hello World and learn why we believe every business deserves a clear, honest, one-page website — no bloat, no nonsense.">
+<link rel="canonical" href="https://hello-world-b4c3.sites.tibly.ai/about">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hello-world-b4c3.sites.tibly.ai/about">
+<meta property="og:site_name" content="Hello World">
+<meta property="og:title" content="About Us | Hello World — Simple, Honest Websites">
+<meta property="og:description" content="Meet the people behind Hello World and learn why we believe every business deserves a clear, honest, one-page website — no bloat, no nonsense.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #f0fff4;
+  --color-brand-100: #d9ffe4;
+  --color-brand-200: #b3ffc9;
+  --color-brand-300: #80ffa8;
+  --color-brand-400: #40ff7d;
+  --color-brand-500: #00ff41;
+  --color-brand-600: #00cc34;
+  --color-brand-700: #009927;
+  --color-brand-800: #00661a;
+  --color-brand-900: #00330d;
+
+  --color-accent-50: #fff8ec;
+  --color-accent-100: #ffedc9;
+  --color-accent-200: #ffdb93;
+  --color-accent-300: #ffc866;
+  --color-accent-400: #ffb84d;
+  --color-accent-500: #ffa71a;
+  --color-accent-600: #e68a00;
+  --color-accent-700: #b36b00;
+  --color-accent-800: #804d00;
+  --color-accent-900: #4d2e00;
+
+  --color-surface: #f5f5f5;
+  --color-ink: #1a1a2e;
+  --color-muted: #b0b0b0;
+
+  --font-display: "Space Mono", monospace;
+  --font-body: "Open Sans", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block bg-brand-500 text-ink font-display font-bold px-6 py-3 rounded-md hover:bg-brand-600 transition-colors duration-150;
+  }
+  .btn-secondary {
+    @apply inline-block bg-accent-400 text-ink font-display font-bold px-6 py-3 rounded-md hover:bg-accent-500 transition-colors duration-150;
+  }
+  .card {
+    @apply bg-surface border border-muted/40 rounded-lg p-6 shadow-sm;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-ink text-surface">
+  <div class="max-w-3xl mx-auto flex flex-col items-center gap-3 px-6 py-6 text-center">
+    <a href="/" class="font-display text-2xl tracking-tight">
+      <span class="text-brand-500">&gt;</span> Hello World
+    </a>
+    <nav class="flex flex-wrap justify-center gap-4 font-body text-sm text-muted">
+      <a href="#hello" class="hover:text-brand-500 transition-colors">Hello</a>
+      <a href="#world" class="hover:text-brand-500 transition-colors">World</a>
+      <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hello -->
+<section class="bg-surface" data-block="hello" id="hello">
+  <div class="max-w-3xl mx-auto px-6 py-16 sm:py-20 text-center">
+    <p class="font-display text-sm text-brand-700 tracking-widest uppercase mb-3">// about us</p>
+    <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-ink mb-6">
+      Every good program starts with a first line.
+    </h1>
+    <p class="font-body text-lg text-ink/80 max-w-xl mx-auto">
+      Ours was <span class="font-display text-brand-700">print("Hello, World")</span> —
+      and it never stopped feeling right. So we built a business around that
+      same idea: start simple, say what you mean, and stop when you're done.
+    </p>
+  </div>
+</section>
+<!-- /block:hello -->
+<!-- block:world -->
+<section class="bg-white" data-block="world" id="world">
+  <div class="max-w-3xl mx-auto px-6 py-16 sm:py-20">
+    <div class="grid gap-10 md:grid-cols-2 md:gap-12 items-start">
+      <div>
+        <h2 class="font-display text-2xl sm:text-3xl text-ink mb-4">Why we exist</h2>
+        <p class="font-body text-ink/80 leading-relaxed">
+          We got tired of watching small businesses pay for six-page websites
+          nobody ever finished — bloated menus, stock photo carousels, forms
+          that quietly went nowhere. Most owners just need one honest page:
+          who you are, what you offer, and how to reach you. So that's what
+          we build. Nothing you don't need, nothing that breaks.
+        </p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl sm:text-3xl text-ink mb-4">Our philosophy</h2>
+        <p class="font-body text-ink/80 leading-relaxed">
+          Simple isn't the same as small. A single well-written page can hold
+          your whole story if you're clear about it. We treat every word and
+          every button like it has to earn its place — the same way a good
+          line of code does. Clarity first. Cleverness only if it helps.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 card bg-brand-50 border-brand-200">
+      <p class="font-display text-brand-800 text-lg mb-2">A small manifesto</p>
+      <ul class="font-body text-ink/80 space-y-2 list-disc list-inside">
+        <li>One page can be enough — if it's the right page.</li>
+        <li>Fast beats fancy. Every time.</li>
+        <li>If a visitor can't find your phone number in ten seconds, we failed.</li>
+        <li>Websites should ship like software: tested, working, live.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- /block:world -->
+<!-- block:team -->
+<section class="bg-surface" data-block="team">
+  <div class="max-w-3xl mx-auto px-6 py-16 sm:py-20">
+    <h2 class="font-display text-2xl sm:text-3xl text-ink mb-2 text-center">The people behind the print statement</h2>
+    <p class="font-body text-ink/70 text-center max-w-lg mx-auto mb-12">
+      Small team, strong opinions about semicolons and clean layouts.
+    </p>
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="card text-center">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-accent-400 flex items-center justify-center font-display text-ink text-xl">JS</div>
+        <h3 class="font-display text-lg text-ink">Jordan Sato</h3>
+        <p class="font-body text-sm text-brand-700 mb-2">Founder &amp; Builder</p>
+        <p class="font-body text-sm text-ink/70">
+          Spent a decade writing enterprise software before deciding the best
+          websites should read like a well-commented function: short and clear.
+        </p>
+      </div>
+      <div class="card text-center">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-brand-400 flex items-center justify-center font-display text-ink text-xl">AR</div>
+        <h3 class="font-display text-lg text-ink">Ama Reyes</h3>
+        <p class="font-body text-sm text-brand-700 mb-2">Words &amp; Design</p>
+        <p class="font-body text-sm text-ink/70">
+          Writes the copy and picks the colors. Believes most websites use
+          three times as many words as they need — including this one.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:team -->
+<!-- block:contact -->
+<section class="bg-ink" data-block="contact" id="contact">
+  <div class="max-w-2xl mx-auto px-6 py-16 sm:py-20">
+    <div class="text-center mb-10">
+      <h2 class="font-display text-2xl sm:text-3xl text-surface mb-3">Say hello back</h2>
+      <p class="font-body text-muted max-w-md mx-auto">
+        Curious about a one-page site of your own, or just want to tell us we
+        got a semicolon wrong? Drop a line below — a real person reads every message.
+      </p>
+    </div>
+
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="card space-y-4">
+      <input type="hidden" name="_page" value="/about">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <label for="name" class="block font-body text-sm font-semibold text-ink mb-1">Name</label>
+        <input id="name" name="name" type="text" required
+          class="w-full rounded-md border border-muted/50 px-4 py-2 font-body text-ink focus:outline-none focus:ring-2 focus:ring-brand-500">
+      </div>
+
+      <div>
+        <label for="email" class="block font-body text-sm font-semibold text-ink mb-1">Email</label>
+        <input id="email" name="email" type="email" required
+          class="w-full rounded-md border border-muted/50 px-4 py-2 font-body text-ink focus:outline-none focus:ring-2 focus:ring-brand-500">
+      </div>
+
+      <div>
+        <label for="message" class="block font-body text-sm font-semibold text-ink mb-1">Message</label>
+        <textarea id="message" name="message" rows="4" required
+          class="w-full rounded-md border border-muted/50 px-4 py-2 font-body text-ink focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+      </div>
+
+      <button type="submit" class="btn w-full sm:w-auto">Send it &gt;_</button>
+    </form>
+  </div>
+</section>
+<!-- /block:contact -->
+<!-- block:footer -->
+<footer class="bg-ink text-surface">
+  <div class="max-w-3xl mx-auto flex flex-col items-center gap-4 px-6 py-10 text-center">
+    <p class="font-display text-lg">
+      <span class="text-brand-500">&gt;</span> Hello World
+    </p>
+    <nav class="flex flex-wrap justify-center gap-4 font-body text-sm text-muted">
+      <a href="#hello" class="hover:text-accent-400 transition-colors">Hello</a>
+      <a href="#world" class="hover:text-accent-400 transition-colors">World</a>
+      <a href="#contact" class="hover:text-accent-400 transition-colors">Contact</a>
+    </nav>
+    <div class="font-body text-sm text-muted space-y-1">
+      <p>Email: <a href="mailto:hello@helloworld.example" class="hover:text-brand-500">hello@helloworld.example</a></p>
+      <p>Phone: (555) 010-0101</p>
+    </div>
+    <p class="font-body text-xs text-muted">&copy; 2024 Hello World. Printed to stdout with love.</p>
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>

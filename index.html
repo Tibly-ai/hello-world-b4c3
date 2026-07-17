@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello World — A Simple, Joyful Start</title>
+<meta name="description" content="Hello World prints one perfect line to the world: your first step, made simple. Minimalist web presence for people who just want to say hi.">
+<link rel="canonical" href="https://hello-world-b4c3.sites.tibly.ai/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hello-world-b4c3.sites.tibly.ai/">
+<meta property="og:site_name" content="Hello World">
+<meta property="og:title" content="Hello World — A Simple, Joyful Start">
+<meta property="og:description" content="Hello World prints one perfect line to the world: your first step, made simple. Minimalist web presence for people who just want to say hi.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #f0fff4;
+  --color-brand-100: #d9ffe4;
+  --color-brand-200: #b3ffc9;
+  --color-brand-300: #80ffa8;
+  --color-brand-400: #40ff7d;
+  --color-brand-500: #00ff41;
+  --color-brand-600: #00cc34;
+  --color-brand-700: #009927;
+  --color-brand-800: #00661a;
+  --color-brand-900: #00330d;
+
+  --color-accent-50: #fff8ec;
+  --color-accent-100: #ffedc9;
+  --color-accent-200: #ffdb93;
+  --color-accent-300: #ffc866;
+  --color-accent-400: #ffb84d;
+  --color-accent-500: #ffa71a;
+  --color-accent-600: #e68a00;
+  --color-accent-700: #b36b00;
+  --color-accent-800: #804d00;
+  --color-accent-900: #4d2e00;
+
+  --color-surface: #f5f5f5;
+  --color-ink: #1a1a2e;
+  --color-muted: #b0b0b0;
+
+  --font-display: "Space Mono", monospace;
+  --font-body: "Open Sans", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block bg-brand-500 text-ink font-display font-bold px-6 py-3 rounded-md hover:bg-brand-600 transition-colors duration-150;
+  }
+  .btn-secondary {
+    @apply inline-block bg-accent-400 text-ink font-display font-bold px-6 py-3 rounded-md hover:bg-accent-500 transition-colors duration-150;
+  }
+  .card {
+    @apply bg-surface border border-muted/40 rounded-lg p-6 shadow-sm;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-ink text-surface">
+  <div class="max-w-3xl mx-auto flex flex-col items-center gap-3 px-6 py-6 text-center">
+    <a href="/" class="font-display text-2xl tracking-tight">
+      <span class="text-brand-500">&gt;</span> Hello World
+    </a>
+    <nav class="flex flex-wrap justify-center gap-4 font-body text-sm text-muted">
+      <a href="#hello" class="hover:text-brand-500 transition-colors">Hello</a>
+      <a href="#world" class="hover:text-brand-500 transition-colors">World</a>
+      <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="bg-ink text-surface" data-block="hero">
+  <div class="max-w-3xl mx-auto px-6 py-24 sm:py-32 text-center flex flex-col items-center gap-6">
+    <p class="font-display text-brand-500 text-sm sm:text-base tracking-widest">$ ./run --greeting</p>
+    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+      Hello, <span class="text-brand-500">World</span><span class="text-accent-400 animate-pulse">_</span>
+    </h1>
+    <p class="font-body text-muted text-lg sm:text-xl max-w-xl">
+      Every great program starts with two words. Every great business needs one clear message.
+      We help you print yours — clean, simple, and impossible to miss.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 pt-4">
+      <a href="#contact" class="btn">Say Hello</a>
+      <a href="#hello" class="btn-secondary">See the Output</a>
+    </div>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:hello -->
+<section id="hello" class="bg-surface text-ink" data-block="hello">
+  <div class="max-w-3xl mx-auto px-6 py-20 sm:py-28 text-center">
+    <p class="font-display text-accent-600 text-sm tracking-widest mb-3">// the offer</p>
+    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">One line. Total clarity.</h2>
+    <p class="font-body text-ink/80 text-lg max-w-xl mx-auto mb-10">
+      We design and ship a single, focused page that says exactly what your business does —
+      no clutter, no jargon, no fifty-tab navigation. Just a clean "hello" the whole internet
+      can understand.
+    </p>
+
+    <div class="card font-display text-left max-w-md mx-auto bg-ink text-brand-500 shadow-md">
+      <p class="text-muted text-xs mb-2">terminal — hello_world.sh</p>
+      <p><span class="text-accent-400">$</span> print("Hello, World!")</p>
+      <p class="text-surface">&gt;&gt; Hello, World!</p>
+      <p class="mt-4 text-muted text-xs">Exit code: 0 — nailed it.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6 mt-14 text-left">
+      <div class="card">
+        <p class="font-display text-brand-600 text-sm mb-2">01 — Compile</p>
+        <p class="font-body text-ink/80 text-sm">We take your story and boil it down to what actually matters.</p>
+      </div>
+      <div class="card">
+        <p class="font-display text-brand-600 text-sm mb-2">02 — Build</p>
+        <p class="font-body text-ink/80 text-sm">A single, fast, good-looking page — live in days, not months.</p>
+      </div>
+      <div class="card">
+        <p class="font-display text-brand-600 text-sm mb-2">03 — Ship</p>
+        <p class="font-body text-ink/80 text-sm">You hit publish. The world says hello back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:hello -->
+<!-- block:world -->
+<section id="world" class="bg-ink text-surface" data-block="world">
+  <div class="max-w-3xl mx-auto px-6 py-20 sm:py-28 text-center">
+    <p class="font-display text-brand-500 text-sm tracking-widest mb-3">// proof it works</p>
+    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-12">Trusted by folks who like things simple</h2>
+
+    <div class="grid sm:grid-cols-2 gap-6 text-left">
+      <figure class="card bg-surface text-ink">
+        <blockquote class="font-body italic text-ink/80">
+          "I told them I just wanted a page that made sense. That's exactly what I got — fast."
+        </blockquote>
+        <figcaption class="font-display text-sm text-brand-700 mt-4">— Priya N., Studio Owner</figcaption>
+      </figure>
+      <figure class="card bg-surface text-ink">
+        <blockquote class="font-body italic text-ink/80">
+          "Finally a website that loads before I finish my coffee. Our customers actually read it now."
+        </blockquote>
+        <figcaption class="font-display text-sm text-brand-700 mt-4">— Marcus T., Bike Repair Co.</figcaption>
+      </figure>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 mt-14 font-display text-sm text-muted">
+      <p><span class="text-accent-400 font-bold">50+</span> pages shipped</p>
+      <p><span class="text-accent-400 font-bold">100%</span> uptime bragging rights</p>
+      <p><span class="text-accent-400 font-bold">0</span> lorem ipsum used</p>
+    </div>
+  </div>
+</section>
+<!-- /block:world -->
+<!-- block:contact -->
+<section id="contact" class="bg-surface text-ink" data-block="contact">
+  <div class="max-w-xl mx-auto px-6 py-20 sm:py-28 text-center">
+    <p class="font-display text-accent-600 text-sm tracking-widest mb-3">// say hi back</p>
+    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">Ready to print your hello?</h2>
+    <p class="font-body text-ink/80 text-lg mb-10">
+      Tell us a little about your business and we'll reply within one business day —
+      usually faster than a page load.
+    </p>
+
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="card text-left space-y-4">
+      <input type="hidden" name="_page" value="/index">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <label for="name" class="font-display text-sm text-ink block mb-1">Name</label>
+        <input id="name" name="name" type="text" required
+          class="w-full rounded-md border border-muted/50 bg-surface px-4 py-2 font-body text-ink focus:outline-none focus:ring-2 focus:ring-brand-500">
+      </div>
+
+      <div>
+        <label for="email" class="font-display text-sm text-ink block mb-1">Email</label>
+        <input id="email" name="email" type="email" required
+          class="w-full rounded-md border border-muted/50 bg-surface px-4 py-2 font-body text-ink focus:outline-none focus:ring-2 focus:ring-brand-500">
+      </div>
+
+      <div>
+        <label for="message" class="font-display text-sm text-ink block mb-1">Message</label>
+        <textarea id="message" name="message" rows="4" required
+          class="w-full rounded-md border border-muted/50 bg-surface px-4 py-2 font-body text-ink focus:outline-none focus:ring-2 focus:ring-brand-500"
+          placeholder="Hello, World! Here's what I'm building..."></textarea>
+      </div>
+
+      <button type="submit" class="btn w-full sm:w-auto">Send &amp; Print</button>
+    </form>
+
+    <p class="font-body text-muted text-sm mt-8">
+      Prefer old-school? Email <a href="mailto:hello@helloworld.example" class="text-brand-700 hover:text-brand-600 underline">hello@helloworld.example</a>
+    </p>
+  </div>
+</section>
+<!-- /block:contact -->
+<!-- block:footer -->
+<footer class="bg-ink text-surface">
+  <div class="max-w-3xl mx-auto flex flex-col items-center gap-4 px-6 py-10 text-center">
+    <p class="font-display text-lg">
+      <span class="text-brand-500">&gt;</span> Hello World
+    </p>
+    <nav class="flex flex-wrap justify-center gap-4 font-body text-sm text-muted">
+      <a href="#hello" class="hover:text-accent-400 transition-colors">Hello</a>
+      <a href="#world" class="hover:text-accent-400 transition-colors">World</a>
+      <a href="#contact" class="hover:text-accent-400 transition-colors">Contact</a>
+    </nav>
+    <div class="font-body text-sm text-muted space-y-1">
+      <p>Email: <a href="mailto:hello@helloworld.example" class="hover:text-brand-500">hello@helloworld.example</a></p>
+      <p>Phone: (555) 010-0101</p>
+    </div>
+    <p class="font-body text-xs text-muted">&copy; 2024 Hello World. Printed to stdout with love.</p>
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
